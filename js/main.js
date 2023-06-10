@@ -14,7 +14,8 @@ document
       return;
     }
 
-    if (r1 > r2) {
+    if (r1[0] > r2[0]) {
+      console.log(r1[0]);
       document.getElementById("resuelt").innerHTML = `<div class="winer">
         <div>
           <h2>The winner is ${p1}</h2>
@@ -27,10 +28,11 @@ document
           />
         </div>
       </div>`;
-    } else if (r2 > r1) {
+    } else if (r2[0] > r1[0]) {
+      console.log(r2);
       document.getElementById("resuelt").innerHTML = `<div class="winer">
         <div>
-          <h2>The winner is ${p2}</h2>
+          <h2 style="text-align: center;">The winner is ${p2}</h2>
         </div>
         <div>
           <img
@@ -98,6 +100,7 @@ async function compare(p) {
 */
 document.getElementById("mnue").addEventListener("click", function () {
   let x = document.getElementById("link");
+
   if (x.style.display == "none") {
     x.style.cssText = "display: flex;flex-direction: column;";
   } else {
