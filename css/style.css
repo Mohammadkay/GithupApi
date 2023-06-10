@@ -207,6 +207,7 @@ footer ul li a {
   align-items: center;
   color: var(--fontsecond);
   width: 90%;
+  border-radius: 6px;
 }
 .repocard #repotitle {
   width: 87%;

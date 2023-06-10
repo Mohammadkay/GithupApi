@@ -16,7 +16,6 @@ document
             } else {
               count = 6;
             }
-
             for (let i = 0; i < count; i++) {
               let coler = "red";
               if (data[i].language == "JavaScript") {
